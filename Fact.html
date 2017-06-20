@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Factorial
+	</title>
+</head>
+<body onload="Factorial()">
+
+</body>
+	<script type="text/javascript">
+		function Factorial(a)
+		{
+			
+			if(a==0 || a==1)
+			{
+				return 1;
+			}
+			var Res=a;
+			while(a>1)
+			{
+				Res=Res*(a-1);
+				a=a-1;
+			}
+
+				return Res;
+			}
+			document.write(Factorial(5));
+		
+	</script>
+</html>

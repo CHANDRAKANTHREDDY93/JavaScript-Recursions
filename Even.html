@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Even Numbers</title>
+	</head>
+	<body>
+		<h1><center>Even or Odd</center></h1>
+		<form id="form">
+		<input type="Number" id="num" placeholder="Enter Some Number"><br><br>
+		<input type="button" id="btn" value="Submit" onclick="Even()">
+
+			
+		</form>
+	</body>
+	<script type="text/javascript">
+	function Even()
+	{
+		var a=document.getElementById('num').value;
+		if(a%2===0)
+		{
+			alert("Given num is Even");
+			return a;
+		}
+
+		else
+		{
+			alert("Given number is Odd");
+		}
+		return a;
+
+}
+	</script>
+</html>

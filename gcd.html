@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<title>
+			GCD using jS
+		</title>
+	<style>
+		html, body
+		{
+			height: 100%;
+			width: 100%;
+		}
+		.header
+		{
+			height: 20%;
+			width: 100%;
+
+		}
+		.left-content
+		{
+			height: 80%;
+			width: 50%;
+			float: left;
+			position: absolute;
+		}
+		.right-content
+		{
+			height: 80%;
+			width: 50%;
+			float: right;
+			position: relative;
+		}
+	</style>
+	</head>
+	<body window.onload="function()">
+		<div class="header">
+		<h1><center>Gcd using javaScript</center></h1>
+		</div>
+		
+
+	</body>
+    <script type="text/javascript">
+    function Gcd(a, b)
+    {
+    	if(b==0)
+    	{
+    		return a;
+    	}
+    	if(a<b)
+    	{
+    		Gcd=Gcd(b, a);
+    		return Gcd;
+    	}
+    	else
+    	{
+    		return Gcd(b, a%b);
+    	}
+
+    }
+    Gcd(12, 24);
+    document.write(Gcd);
+	
+    </script> 
+</html>
